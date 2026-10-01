@@ -6,7 +6,7 @@ class Solution:
             for char in word:
                 index = ord(char)-ord('a')
                 count[index]+=1
-            key = tuple(count)
+            key = tuple(count) #Python lists are mutable and cannot be used as dictionary keys.Tuples are immutable, so a tuple containing the character counts can be used as a dictionary key.
             if key not in group:
                 group[key]=[]
             group[key].append(word)
