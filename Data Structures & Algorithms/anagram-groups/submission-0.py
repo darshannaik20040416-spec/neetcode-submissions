@@ -10,5 +10,5 @@ class Solution:
             if key not in group:
                 group[key]=[]
             group[key].append(word)
-        return list(group.values())
+        return list(group.values()) #group.values() returns all the lists stored in the dictionary.list() converts those values into a list.
                         
