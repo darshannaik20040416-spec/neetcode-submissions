@@ -12,3 +12,18 @@ class Solution:
             group[key].append(word)
         return list(group.values()) #group.values() returns all the lists stored in the dictionary.list() converts those values into a list.
                         
+# group.values() retrieves all the values:
+
+# dict_values([
+#     ["eat", "tea", "ate"],
+#     ["tan", "nat"],
+#     ["bat"]
+# ])
+
+# list(group.values()) converts those values into a list:
+
+# [
+#     ["eat", "tea", "ate"],
+#     ["tan", "nat"],
+#     ["bat"]
+# ]
